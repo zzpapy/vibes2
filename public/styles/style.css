@@ -1,0 +1,72 @@
+:root {
+    --pink: rgb(233, 89, 122);
+    --theme:rgb(195,123,71);
+    --gredient:linear-gradient( rgba(195,123,71,1) 0%, rgba(195,123,71,1) 0%, rgba(121,61,9,1) 97%);
+  }
+*{
+    box-sizing: border-box;
+}
+body{
+    background: var(--theme);
+    background: linear-gradient(90deg, rgba(195,123,71,1) 0%, rgba(195,123,71,1) 0%, rgba(121,61,9,1) 97%);
+}
+img{
+    /* object-fit:cover; */
+    max-width: 100%;
+}
+#wrapper{
+    width: 75%;
+    margin: auto;
+}
+.main>*:nth-child(odd){
+    background: white;
+}
+section:not(#gallery){
+    padding: 1em 8em;
+}
+.logo img{
+    width:10em;
+    height: 10em;
+}
+.flex{
+    display:flex;
+}
+.child{
+    flex:1;
+}
+#nav{
+    align-items: center;
+    justify-content: space-around;
+}
+#title{
+    background: url('../images/foret.jfif');
+}
+.gal_img{
+    flex-wrap: wrap;
+}
+.img_gal{
+    width: 24.77em;
+    height: 10em;
+    overflow : hidden;
+}
+#testimonials h1{
+    text-align: center;
+}
+.center_test{
+    max-width: 75%;
+    margin:auto;
+}
+.avatar{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    overflow:hidden;
+}
+.test{
+    max-width: 75%;
+    margin: auto;
+    text-align: center;
+}
+.become{
+    text-align: center;
+}
