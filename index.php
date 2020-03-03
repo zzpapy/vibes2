@@ -44,69 +44,61 @@
                 <div><i class="far fa-paper-plane"></i></div>
             </div>
             <div class="child">
-                <div>
+                <div class="deroul">
                     <h4><i class="fas fa-minus"></i>Lorem</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, corporis!</p>
                 </div>
-                <div>
-                    <h4><i class="fas fa-plus"></i>Ipsum</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, corporis!</p>
+                <div class="deroul">
+                    <h4><i class="fas fa-plus "></i>Ipsum</h4>
+                    <p class="hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, corporis!</p>
                 </div>
-                <div>
-                    <h4><i class="fas fa-plus"></i>test</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, corporis!</p>
+                <div class="deroul">
+                    <h4><i class="fas fa-plus "></i>test</h4>
+                    <p class="hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, corporis!</p>
                 </div>
             </div>
         </section>
         <section id="gallery">
-            <div class="gal_img flex">
-                
-                    <img src="public/images/photo1.jpg" alt="photo foret">
-                
-                
-                    <img src="public/images/photo2.jpg" alt="photo foret">
-                
-                
-                    <img src="public/images/photo3.jpg" alt="photo foret">
-                
-                
-                    <img src="public/images/photo4.png" alt="photo foret">
-                
-                
-                    <img src="public/images/photo5.jpg" alt="photo foret">
-                
-                
-                    <img src="public/images/photo6.jpg" alt="photo foret">
-                
-                
-                    <img src="public/images/photo3.jpg" alt="photo foret">
-                
-                
-                    <img src="public/images/photo1.jpg" alt="photo foret">
-                
-
-            </div>
-            <div class="gal_nav"></div>
+            <div class="gal_img flex">                
+                <div class="img_gal">
+                    <img src="public/images/photo1.jpg" alt="photo foret">               
+                </div>
+                <div class="img_gal">
+                    <img src="public/images/photo2.jpg" alt="photo foret">               
+                </div>
+                <div class="img_gal">
+                    <img src="public/images/photo3.jpg" alt="photo foret">               
+                </div>
+                <div class="img_gal">
+                    <img src="public/images/photo4.png" alt="photo foret">               
+                </div>
+                <div class="img_gal">
+                    <img src="public/images/photo5.jpg" alt="photo foret">               
+                </div>
+                <div class="img_gal">
+                    <img src="public/images/photo6.jpg" alt="photo foret">               
+                </div>
+                <div class="img_gal">
+                    <img src="public/images/photo3.jpg" alt="photo foret">               
+                </div>
+                <div class="img_gal">
+                    <img src="public/images/photo1.jpg" alt="photo foret">            </div>
+                </div>
+                <div class="gal_nav"></div>
         </section>
         <section id="testimonials">
             <h1>client testimonials</h1>
             <div class="center_test">
-                <div class="flex test">
-                    
-                        <img src="public/images/moi.jpeg" alt="Avatar" style="width:90px">
-                    
+                <div class="flex test">                    
+                    <img src="public/images/moi.jpeg" alt="Avatar" style="width:90px">                    
                     <blockquote><span>Chris Fox.</span> CEO at Mighty Schools.John Doe saved us from a web disaster.</blockquote>
                 </div>
-                <div class="flex test">
-                    
-                        <img src="public/images/moi.jpeg" alt="Avatar" style="width:90px">
-                    
+                <div class="flex test">                    
+                    <img src="public/images/moi.jpeg" alt="Avatar" style="width:90px">                    
                     <blockquote><span>Chris Fox.</span> CEO at Mighty Schools.John Doe saved us from a web disaster.</blockquote>
                 </div>
-                <div class="flex test">
-                    
-                        <img src="public/images/moi.jpeg" alt="Avatar" style="width:90px">
-                    
+                <div class="flex test">                    
+                    <img src="public/images/moi.jpeg" alt="Avatar" style="width:90px">                    
                     <blockquote><span>Chris Fox.</span> CEO at Mighty Schools.John Doe saved us from a web disaster.</blockquote>
                 </div>
             </div>
@@ -120,17 +112,21 @@
             <input class=".btn-rose"type="submit" value="buy vibes on themeforest">
         </section>
         <section id="contact">
-            <div>
-                <input type="text">
-                <input type="text">
-                <input type="text">
-            </div>
-            <div>
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="submit" >
-            </div>
+            <h1>GET IN TOUCH</h1>
+            <form action="" id="form" class="flex">
+                <div>
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                </div>
+                <div>
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="submit">
+                </div>
+
+            </form>
             <footer id="footer">
                 <div></div>
                 <div></div>
@@ -139,6 +135,7 @@
         </section>
     </div>
 </div>
-    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>   
+<script src="public/scripts/script.js"></script>
 </body>
 </html>

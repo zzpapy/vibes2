@@ -12,9 +12,12 @@ body{
 }
 img{
     /* object-fit:cover; */
-    max-width: 100%;
+    /* max-width: 100%; */
 }
-input[type=submit]{
+.hide{
+    display: none;
+}
+/* input[type=submit]{
     padding: 0.5em 1em;
     border-style: solid;
     border-width: 2px;
@@ -22,19 +25,22 @@ input[type=submit]{
     text-transform: uppercase;
     border-color: white;
     background-color: transparent;
-}
+} */
 #wrapper{
     width: 75%;
     margin: auto;
 }
 #header{
+}
+#title,#buy{
     color: white;
+    padding:2em 0;
     text-align: center;
 }
-#title{
-    padding:2em 0;
+#buy{
+    background: url('../images/ciel.jpg');
 }
-#title>p{
+#title>p,#buy>p{
     margin: 4em 0 4em 0;
 }
 .main>*:nth-child(odd){
@@ -47,8 +53,8 @@ section:not(#gallery){
     padding: 1em 8em;
 }
 .logo img{
-    width:10em;
-    height: 10em;
+    width:5em;
+    height: 5em;
 }
 .flex{
     display:flex;
@@ -59,6 +65,17 @@ section:not(#gallery){
 #nav{
     align-items: center;
     justify-content: space-around;
+    padding: 2em 0;
+}
+.nav_menu a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+    text-transform: uppercase;
+
+}
+.nav_menu a:hover{
+    border-bottom: 1px solid white;
 }
 #title{
     background: url('../images/foret.jfif');
@@ -69,12 +86,19 @@ section:not(#gallery){
 .gal_img{
     flex-wrap: wrap;
 }
-.gal_img>img{
+.img_gal{
     width: 15.3525em;
     height: 14.3525em;
+    overflow: hidden;
+}
+.gal_img img:hover{
+    transform: scale(1.1);
+}
+.img_gal>img{
+   
     overflow : hidden;
 }
-#testimonials h1{
+#testimonials h1,#contact h1{
     text-align: center;
 }
 .center_test{
@@ -118,5 +142,8 @@ blockquote p{
     margin-top: 0;
 }
 .become{
+    text-align: center;
+}
+#form>div{
     text-align: center;
 }
