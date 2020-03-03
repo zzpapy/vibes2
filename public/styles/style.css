@@ -14,12 +14,34 @@ img{
     /* object-fit:cover; */
     max-width: 100%;
 }
+input[type=submit]{
+    padding: 0.5em 1em;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    text-transform: uppercase;
+    border-color: white;
+    background-color: transparent;
+}
 #wrapper{
     width: 75%;
     margin: auto;
 }
+#header{
+    color: white;
+    text-align: center;
+}
+#title{
+    padding:2em 0;
+}
+#title>p{
+    margin: 4em 0 4em 0;
+}
 .main>*:nth-child(odd){
     background: white;
+}
+.main>*:nth-child(even){
+    color: white;
 }
 section:not(#gallery){
     padding: 1em 8em;
@@ -40,13 +62,16 @@ section:not(#gallery){
 }
 #title{
     background: url('../images/foret.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20em;
 }
 .gal_img{
     flex-wrap: wrap;
 }
-.img_gal{
-    width: 24.77em;
-    height: 10em;
+.gal_img>img{
+    width: 15.3525em;
+    height: 14.3525em;
     overflow : hidden;
 }
 #testimonials h1{
@@ -57,15 +82,40 @@ section:not(#gallery){
     margin:auto;
 }
 .avatar{
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
     overflow:hidden;
 }
-.test{
-    max-width: 75%;
-    margin: auto;
-    text-align: center;
+.center_test>div{
+    display: flex;
+    align-items: flex-start;
+    padding: 2em 0;
+    border-bottom: 1px solid #aaa; 
+}
+.center_test>div:last-child{
+    border: none;
+}
+.center_test img{
+    height: 5em;
+    margin: 0 1em 0 0;
+    border-radius: 50%;
+}
+.center_test>div:nth-child(even){
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.center_test>div:nth-child(even) img{
+    margin: 0 0 0 1em;
+}
+
+blockquote{
+    margin: 0;
+}
+blockquote p{
+    font-style: oblique;
+    font-size: 1.5em;
+    margin-top: 0;
 }
 .become{
     text-align: center;

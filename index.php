@@ -27,7 +27,7 @@
         <div id="title">
             <h1>html template for creative fol design agencies</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe beatae tempore cumque perspiciatis earum veritatis eum, vitae, laborum itaque voluptatem debitis tenetur, voluptatum in expedita.</p>
-            <button>read more</button>
+            <input type="submit" value="read more">
         </div>
     </header>
     <div class="main">
@@ -60,30 +60,30 @@
         </section>
         <section id="gallery">
             <div class="gal_img flex">
-                <div class="img_gal">
+                
                     <img src="public/images/photo1.jpg" alt="photo foret">
-                </div>
-                <div class="img_gal">
+                
+                
                     <img src="public/images/photo2.jpg" alt="photo foret">
-                </div>
-                <div class="img_gal">
+                
+                
                     <img src="public/images/photo3.jpg" alt="photo foret">
-                </div>
-                <div class="img_gal">
+                
+                
                     <img src="public/images/photo4.png" alt="photo foret">
-                </div>
-                <div class="img_gal">
+                
+                
                     <img src="public/images/photo5.jpg" alt="photo foret">
-                </div>
-                <div class="img_gal">
+                
+                
                     <img src="public/images/photo6.jpg" alt="photo foret">
-                </div>
-                <div class="img_gal">
-                    <img src="public/images/photo7.jpg" alt="photo foret">
-                </div>
-                <div class="img_gal">
-                    <img src="public/images/photo8.jpg" alt="photo foret">
-                </div>
+                
+                
+                    <img src="public/images/photo3.jpg" alt="photo foret">
+                
+                
+                    <img src="public/images/photo1.jpg" alt="photo foret">
+                
 
             </div>
             <div class="gal_nav"></div>
@@ -92,32 +92,32 @@
             <h1>client testimonials</h1>
             <div class="center_test">
                 <div class="flex test">
-                    <div class="avatar">
+                    
                         <img src="public/images/moi.jpeg" alt="Avatar" style="width:90px">
-                    </div>
+                    
                     <blockquote><span>Chris Fox.</span> CEO at Mighty Schools.John Doe saved us from a web disaster.</blockquote>
                 </div>
                 <div class="flex test">
-                    <blockquote><span>Chris Fox.</span> CEO at Mighty Schools.John Doe saved us from a web disaster.</blockquote>
-                    <div class="avatar">
+                    
                         <img src="public/images/moi.jpeg" alt="Avatar" style="width:90px">
-                    </div>
+                    
+                    <blockquote><span>Chris Fox.</span> CEO at Mighty Schools.John Doe saved us from a web disaster.</blockquote>
                 </div>
                 <div class="flex test">
-                    <div class="avatar">
+                    
                         <img src="public/images/moi.jpeg" alt="Avatar" style="width:90px">
-                    </div>
+                    
                     <blockquote><span>Chris Fox.</span> CEO at Mighty Schools.John Doe saved us from a web disaster.</blockquote>
                 </div>
             </div>
             <div class="become">
-                <a href="">BECOME OUR CLIENT</a>
+                <input type="submit" value="become our client">
             </div>            
         </section>
         <section id="buy">
             <h1> new horizons await</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae in velit sunt eius odit quasi repellendus explicabo commodi quos. Natus dolorum quibusdam, quasi veritatis quam vitae. Quibusdam, molestiae reiciendis?</p>
-            <button>buy vibes on themeforest</button>
+            <input class=".btn-rose"type="submit" value="buy vibes on themeforest">
         </section>
         <section id="contact">
             <div>
