@@ -1,4 +1,4 @@
 <?php
     echo 'toto';
-    header('location:../index.php');
+    // header('location:../index.php');
 ?>
