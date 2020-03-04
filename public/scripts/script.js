@@ -18,3 +18,19 @@ $(".close").on("click",function(){
     // $(".modal").toggleClass("transform-active")
     $(".affich").toggleClass("transform-active").html("")
 })
+$(".fa-tint").on("click",function(){
+    $("#choix").click().removeClass("hide");
+    console.log('toto')
+})
+var c = document.getElementById("choix")
+    
+    t = document.getElementById("time"),
+    res2 = document.getElementById("result2");
+
+c.addEventListener("input", function() {
+    color = c.value
+    document.documentElement.style.setProperty('--pink', color);
+    document.documentElement.style.setProperty('--theme', color);
+    $("#choix").click().addClass("hide");
+    console.log(c.value)
+}, false); 

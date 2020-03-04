@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
+<div class="modal close hide"><div class="affich .transform"></div></div>
+<div class="color"><i class="fas fa-tint fa-3x"></i><input id="choix" class="hide " tabindex=-1 type="color"></div>
 <div id="wrapper">
     <header id="header">
         <div id="nav" class="flex">
@@ -27,7 +29,7 @@
         <div id="title">
             <h1>html template for creative fol design agencies</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe beatae tempore cumque perspiciatis earum veritatis eum, vitae, laborum itaque voluptatem debitis tenetur, voluptatum in expedita.</p>
-            <input type="submit" value="read more">
+            <input type="submit" class="button" value="read more">
         </div>
     </header>
     <div class="main">
@@ -82,10 +84,9 @@
                     <img src="public/images/photo3.jpg" alt="photo foret">               
                 </div>
                 <div class="img_gal">
-                    <img src="public/images/photo1.jpg" alt="photo foret">            </div>
+                    <img src="public/images/photo1.jpg" alt="photo foret"> 
                 </div>
                 <div class="gal_nav"></div>
-                <div class="modal close hide"><div class="affich .transform"></div></div>
         </section>
         <section id="testimonials">
             <h1>client testimonials</h1>
@@ -104,27 +105,31 @@
                 </div>
             </div>
             <div class="become">
-                <input type="submit" value="become our client">
+                <input type="submit" class="button text-rose border-rose .text-rose" value="become our client">
             </div>            
         </section>
         <section id="buy">
             <h1> new horizons await</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae in velit sunt eius odit quasi repellendus explicabo commodi quos. Natus dolorum quibusdam, quasi veritatis quam vitae. Quibusdam, molestiae reiciendis?</p>
-            <input class=".btn-rose"type="submit" value="buy vibes on themeforest">
+            <input class="button border-rose"type="submit" value="buy vibes on themeforest">
         </section>
         <section id="contact">
             <h1>GET IN TOUCH</h1>
             <form action="" id="form" class="flex">
-                <div>
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
+                <div class="">
+                    <div class="form_label">Votre nom</div>
+                    <input id="nom" type="text" name ="nom" value="">                    
+                    <div class="form_label">Votre email</div>
+                    <input id="email" type="email" name ="email" value="">
+                    <div class="form_label">Votre téléphone</div>
+                    <input id="tel" type="text" name ="tel" value="">
                 </div>
                 <div>
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <input type="submit">
+                    <div class="form_label">sujet</div>
+                    <input id="sujet" type="text" name ="sujet" value="">
+                    <div class="form_label">message</div>
+                    <textarea rows="4" cols="" name="comment" form="usrform"></textarea>
+                    <button class="button">envoyer</button>
                 </div>
 
             </form>
