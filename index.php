@@ -6,11 +6,14 @@
     <title>Vibes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
-<div class="modal close hide"><div class="affich .transform"></div></div>
-<div class="color"><i class="fas fa-tint fa-3x"></i><input id="choix" class="hide " tabindex=-1 type="color"></div>
+<div class="modal close hide"><div class="affich .transform"><div class="center_modal"></div></div></div>
+<i class='fas change fa-palette fa-3x'></i>
+    <input id="choix" class="hide "  type="color">
+
 <div id="wrapper">
     <header id="header">
         <div id="nav" class="flex">
@@ -18,12 +21,12 @@
                 <img src="public/images/logo.png" alt="image logo">
             </div>
             <div class="nav_menu">
-                <a href="#">home</a>
-                <a href="#">about</a>
-                <a href="#">portfolio</a>
-                <a href="#">testimonials</a>
-                <a href="#">contact</a>
-                <a href="#">pages</a>
+                <a href="#title">home</a>
+                <a href="#info">about</a>
+                <a href="#gallery">portfolio</a>
+                <a href="#testimonials">testimonials</a>
+                <a href="#contact">contact</a>
+                <a href="#footer">pages</a>
             </div>
         </div>
         <div id="title">
@@ -90,6 +93,8 @@
         </section>
         <section id="testimonials">
             <h1>client testimonials</h1>
+            <div class="line"></div>
+            <div class="line"></div>
             <div class="center_test">
                 <div class="flex test">                    
                     <img src="public/images/moi.jpeg" alt="Avatar" style="width:90px">                    
@@ -110,12 +115,14 @@
         </section>
         <section id="buy">
             <h1> new horizons await</h1>
+            <div class="line"></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae in velit sunt eius odit quasi repellendus explicabo commodi quos. Natus dolorum quibusdam, quasi veritatis quam vitae. Quibusdam, molestiae reiciendis?</p>
             <input class="button border-rose"type="submit" value="buy vibes on themeforest">
         </section>
         <section id="contact">
             <h1>GET IN TOUCH</h1>
-            <form action="" id="form" class="flex">
+            <div class="line"></div>
+            <form action="apps/envoi.php" id="form" method="POST"class="flex">
                 <div class="">
                     <div class="form_label">Votre nom</div>
                     <input id="nom" type="text" name ="nom" value="">                    
@@ -129,19 +136,41 @@
                     <input id="sujet" type="text" name ="sujet" value="">
                     <div class="form_label">message</div>
                     <textarea rows="4" cols="" name="comment" form="usrform"></textarea>
-                    <button class="button">envoyer</button>
+                    <button class="button border-rose btn-rose">envoyer</button>
                 </div>
 
             </form>
-            <footer id="footer">
-                <div></div>
-                <div></div>
-                <div></div>
-            </footer>
         </section>
+        <footer id="footer" class="flex">
+            <div class="child">
+                    <h2>why choose us ?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tenetur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laboriosam.</p>
+                </div>
+                <div class="child">
+                    <h2>what you get ?</h2>
+                    <div><i class="fab fa-wordpress"></i></div>
+                    <div><i class="fas fa-cog"></i></div>
+                    <div><i class="far fa-paper-plane"></i></div>
+                </div>
+                <div class="child">
+                    <div class="deroul">
+                        <h4><i class="fas fa-minus"></i>Lorem</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, corporis!</p>
+                    </div>
+                    <div class="deroul">
+                        <h4><i class="fas fa-plus "></i>Ipsum</h4>
+                        <p class="hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, corporis!</p>
+                    </div>
+                    <div class="deroul">
+                        <h4><i class="fas fa-plus "></i>test</h4>
+                        <p class="hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, corporis!</p>
+                    </div>
+                </div>
+        </footer>
     </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>  
 <script src="public/scripts/script.js"></script>
 </body>
 </html>

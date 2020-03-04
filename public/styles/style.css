@@ -8,21 +8,36 @@
 }
 body{
     background: var(--theme);
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    margin-bottom: 0.2em;
 }
 img{
     /* object-fit:cover; */
     /* max-width: 100%; */
 }
-.hide{
-    /* display: none; */
-    visibility: hidden;
+.line{
+    height: 1px;
+    width: 10%;
+    margin: auto;
+    border: 0.5px solid var(--pink);
 }
-.color{
+.hide{
+    display: none;
+}
+.fa-palette{
     width: 15em;
     height: 15em;
     position: fixed;
     top: 50%;
+    left: 0.3em;
 }
+#choix{
+    width: 15em;
+    height: 15em;
+}
+
 /* input[type=submit]{
     padding: 0.5em 1em;
     border-style: solid;
@@ -95,6 +110,8 @@ section:not(#gallery){
     align-items: center;
     justify-content: space-around;
     padding: 2em 0;
+    position: sticky;
+    top: 0;
 }
 .nav_menu a{
     color: white;
@@ -128,22 +145,25 @@ section:not(#gallery){
 .affich{
     max-width: 75%;
     margin: auto;
+    padding-top: 5em;
+    z-index: 1;
 }
-.modal .affich img{
+.center_modal{
     max-width: 100%;
-    margin-left: 25%;
+}
+.center_modal img{
+    max-width: 100%;
 }
 .transform {
     transition: all 5s ease;
 }
 
 .transform-active {
-    /* height: 200px; */
     max-width: 100%;
 }
 .img_gal{
-    width: 24.77em;
-    height: 24.77em;
+    width: 25%;
+    height: 15em;
     overflow: hidden;
 }
 .gal_img img:hover{
@@ -209,4 +229,8 @@ blockquote p{
 }
 .form_label{
     text-align: left;
+}
+#footer{
+    background-color: black;
+    padding: 2em;
 }
