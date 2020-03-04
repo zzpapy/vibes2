@@ -50,7 +50,7 @@ window.addEventListener('scroll', function() {
     tab.forEach(element => {
         var test = document.querySelector(element)
         if(isInViewport(test)){
-            console.log($("a[href='"+test+"'"))
+            // console.log($("a[href='"+test+"'"))
             $("a[href='"+test+"'").css("border-bottom","1px solid white")
             test.style.border = "1px solid black"
             // console.log(isInViewport(test))
@@ -59,3 +59,16 @@ window.addEventListener('scroll', function() {
     });
     
 });
+console.log(window.innerWidth)
+if(window.innerWidth<=640){
+    $(".nav_menu").removeClass("flex").addClass("hide")
+
+}
+$(".bars_menu").on("click",function(){
+    $(".nav_menu").toggleClass("hide")
+    $(".nav_menu").toggleClass("flex")
+})
+$(".port").on("click",function(){
+    $(".nav_menu").toggleClass("hide")
+    $(".nav_menu").toggleClass("flex")
+})

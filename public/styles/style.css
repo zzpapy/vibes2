@@ -234,3 +234,35 @@ blockquote p{
     background-color: black;
     padding: 2em;
 }
+.bars_menu{
+    display: none;
+}
+@media all and (max-width: 640px) {
+    #wrapper{
+        width: 100%;
+    }
+    #nav{
+        position: fixed;
+        right:1em;
+        top:1em;
+    }
+    .nav_menu {
+        flex-direction: column;
+        transition: width 4s;
+    }
+    .port{
+        padding: 0.5em 1em;
+        background-color: black;
+        border: 1px solid white;
+    }
+    .bars_menu{
+        display: block;
+        position: fixed;
+        top:1em;
+        right:1em;
+        color: var(--pink);
+    }
+    .logo{
+        display:none;
+    }
+  }

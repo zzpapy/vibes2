@@ -20,15 +20,16 @@
             <div class="logo">
                 <img src="public/images/logo.png" alt="image logo">
             </div>
-            <div class="nav_menu">
-                <a href="#title">home</a>
-                <a href="#info">about</a>
-                <a href="#gallery">portfolio</a>
-                <a href="#testimonials">testimonials</a>
-                <a href="#contact">contact</a>
-                <a href="#footer">pages</a>
+            <div class="nav_menu flex">
+                <a class="port" href="#title">home</a>
+                <a class="port" href="#info">about</a>
+                <a class="port" href="#gallery">portfolio</a>
+                <a class="port" href="#testimonials">testimonials</a>
+                <a class="port" href="#contact">contact</a>
+                <a class="port" href="#footer">pages</a>
             </div>
         </div>
+        <i class="fas bars_menu fa-bars fa-2x"></i>
         <div id="title">
             <h1>html template for creative fol design agencies</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe beatae tempore cumque perspiciatis earum veritatis eum, vitae, laborum itaque voluptatem debitis tenetur, voluptatum in expedita.</p>
