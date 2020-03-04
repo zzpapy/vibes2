@@ -8,3 +8,13 @@ $(".deroul h4").on("click", function(){
     }
     
 })
+$(".img_gal").on("click",function(){
+    console.log(modal = $(this).find("img").clone())
+    $(".modal").toggleClass("hide")
+    $(".affich").append(modal).toggleClass("transform-active")
+})
+$(".close").on("click",function(){
+    $(".modal").toggleClass("hide")
+    // $(".modal").toggleClass("transform-active")
+    $(".affich").toggleClass("transform-active").html("")
+})

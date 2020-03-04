@@ -15,7 +15,8 @@ img{
     /* max-width: 100%; */
 }
 .hide{
-    display: none;
+    /* display: none; */
+    visibility: hidden;
 }
 /* input[type=submit]{
     padding: 0.5em 1em;
@@ -52,6 +53,9 @@ img{
 section:not(#gallery){
     padding: 1em 8em;
 }
+#gallery{
+    /* position: relative; */
+}
 .logo img{
     width:5em;
     height: 5em;
@@ -85,6 +89,23 @@ section:not(#gallery){
 }
 .gal_img{
     flex-wrap: wrap;
+    /* position: relative; */
+}
+.modal{
+    
+    top: 35em;
+    position: absolute;
+}
+.modal img{
+    /* max-width: 100%; */
+}
+.transform {
+    transition: all 5s ease;
+}
+
+.transform-active {
+    /* height: 200px; */
+    max-width: 10px;
 }
 .img_gal{
     width: 15.3525em;

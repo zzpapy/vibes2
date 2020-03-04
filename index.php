@@ -85,6 +85,7 @@
                     <img src="public/images/photo1.jpg" alt="photo foret">            </div>
                 </div>
                 <div class="gal_nav"></div>
+                <div class="modal close hide"><div class="affich .transform"></div></div>
         </section>
         <section id="testimonials">
             <h1>client testimonials</h1>
