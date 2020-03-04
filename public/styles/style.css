@@ -20,7 +20,7 @@ img{
 .line{
     height: 1px;
     width: 10%;
-    margin: auto;
+    margin: 0.5em auto;
     border: 0.5px solid var(--pink);
 }
 .hide{
@@ -171,6 +171,14 @@ section:not(#gallery){
    
     overflow : hidden;
 }
+.gal_nav{
+    width: 100%;
+    justify-content:space-between ;
+    padding:2em 0.3em;
+    background: white;
+}.tri span{
+    color:#aaa;
+}
 #testimonials h1,#contact h1{
     text-align: center;
 }
@@ -195,6 +203,7 @@ section:not(#gallery){
 }
 .center_test img{
     height: 5em;
+    width: 5em;
     margin: 0 1em 0 0;
     border-radius: 50%;
 }
@@ -228,6 +237,9 @@ blockquote p{
 .form_label{
     text-align: left;
 }
+.form_label input,textarea{
+    margin:0.5em 0 0.5em 0;
+}
 #footer{
     background-color: black;
     padding: 2em;
@@ -236,6 +248,9 @@ blockquote p{
     display: none;
 }
 @media all and (max-width: 640px) {
+    .flex{
+        flex-direction: column;
+    }
     #wrapper{
         width: 100%;
     }
@@ -247,6 +262,9 @@ blockquote p{
     .nav_menu {
         flex-direction: column;
         transition: width 4s;
+    }
+    .img_gal{
+        width: 100%;
     }
     .port{
         padding: 0.5em 1em;

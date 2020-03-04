@@ -90,11 +90,20 @@
                 <div class="img_gal">
                     <img src="public/images/photo1.jpg" alt="photo foret"> 
                 </div>
-                <div class="gal_nav"></div>
+                <div class="gal_nav flex">
+                    <div class="tri">
+                        <span>all</span>
+                        <span>image</span>
+                        <span>video</span>
+                        <span>audio</span>
+                    </div>
+                    <div class="load">
+                        <a href="" class="button btn-rose border-rose">load more</a>
+                    </div>
+                </div>
         </section>
         <section id="testimonials">
             <h1>client testimonials</h1>
-            <div class="line"></div>
             <div class="line"></div>
             <div class="center_test">
                 <div class="flex test">                    
@@ -125,18 +134,23 @@
             <div class="line"></div>
             <form action="apps/envoi.php" id="form" method="POST"class="flex">
                 <div class="">
-                    <div class="form_label">Votre nom</div>
-                    <input id="nom" type="text" name ="nom" value="">                    
-                    <div class="form_label">Votre email</div>
-                    <input id="email" type="email" name ="email" value="">
-                    <div class="form_label">Votre téléphone</div>
-                    <input id="tel" type="text" name ="tel" value="">
+                    <div class="form_label">Votre nom
+                        <input id="nom" type="text" name ="nom" value="">                    
+                    </div>
+                    <div class="form_label">Votre email
+                        <input id="email" type="email" name ="email" value="">                        
+                    </div>
+                    <div class="form_label">Votre téléphone
+                        <input id="tel" type="text" name ="tel" value="">
+                    </div>
                 </div>
                 <div>
-                    <div class="form_label">sujet</div>
-                    <input id="sujet" type="text" name ="sujet" value="">
-                    <div class="form_label">message</div>
-                    <textarea rows="4" cols="" name="comment" form="usrform"></textarea>
+                    <div class="form_label">sujet
+                        <input id="sujet" type="text" name ="sujet" value="">
+                    </div>
+                    <div class="form_label">message
+                        <textarea rows="4" cols="" name="comment" form="usrform"></textarea>
+                    </div>
                     <button class="button border-rose btn-rose">envoyer</button>
                 </div>
 
