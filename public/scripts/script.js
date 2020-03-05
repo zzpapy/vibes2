@@ -1,3 +1,4 @@
+let vue
 $(".deroul h4").on("click", function(){
          console.log('toto')  
     if($(this).find("i").hasClass("fa-plus")){ 
@@ -8,14 +9,48 @@ $(".deroul h4").on("click", function(){
     }
     
 })
-$(".img_gal").on("click",function(){
-    console.log(modal = $(this).find("img").clone())
+$(".img_gal").on("click",function(){ 
+    vue = $(this).index()
+    let modal = $(this).find("img").attr('src')
     $(".modal").toggleClass("hide")
-    $(".center_modal").append(modal).toggleClass("transform-active")
+    setTimeout(function(){
+         $("#modal_img").attr('src',modal).toggleClass("transform-active")
+    },1000)    
 })
+
+
+$(".carousel").on("click",function(){ 
+    let direction = $(this).data("direction")
+    if(direction == "next"){
+        vue++
+    }
+    else{
+        vue--
+    }
+    listItem = $(".img_gal")
+    let modal = $("center_modal").find("img")
+    if(listItem.length == vue){
+        vue = 0
+    }
+    let change_img = listItem[vue]
+   change_img = $(change_img).find("img").attr("src")
+   console.log(change_img)
+
+    $("#modal_img").attr('src',change_img)
+       
+})
+
+
+
 $(".close").on("click",function(){
+   
     $(".modal").toggleClass("hide")
-    $(".center_modal").toggleClass("transform-active").html("")
+    $("#modal_img").attr('src',"").toggleClass("transform-active")
+    // $(".center_modal").toggleClass("transform-active").html("")
+})
+
+$(".carousel").on('click', function(e){
+    e.stopPropagation()
 })
 $(".change").on("click",function(){
     $("#choix").click();
@@ -61,12 +96,11 @@ window.addEventListener('scroll', function() {
 });
 console.log(window.innerWidth)
 if(window.innerWidth<=640){
-    $(".nav_menu").removeClass("flex").addClass("hide")
+    $(".nav_menu").addClass("hide")
 
 }
 $(".bars_menu").on("click",function(){
-    $(".nav_menu").toggleClass("hide")
-    $(".nav_menu").toggleClass("flex")
+    $(".nav_menu").toggleClass("hide").toggleClass("transform-active")
 })
 $(".port").on("click",function(){
     $(".nav_menu").toggleClass("hide")

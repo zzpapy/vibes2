@@ -10,7 +10,19 @@
     <link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
-<div class="modal close hide"><div class="affich .transform"><div class="center_modal"></div></div></div>
+<div class="modal close hide">
+    <div class="affich .transform flex">
+        <div class="arrow carousel" data-direction="prev">
+            <i class="fas fa-arrow-left fa-2x"></i>
+        </div>
+        <div class="center_modal">
+            <img id="modal_img" src="">
+        </div>
+        <div class="arrow1 carousel" data-direction="next">
+            <i class="fas fa-arrow-right fa-2x"></i>
+        </div>
+    </div>
+</div>
 <i class='fas change fa-palette fa-3x'></i>
     <input id="choix" class="hide "  type="color">
 
@@ -134,23 +146,17 @@
             <div class="line"></div>
             <form action="apps/envoi.php" id="form" method="POST"class="flex">
                 <div class="">
-                    <div class="form_label">Votre nom
-                        <input id="nom" type="text" name ="nom" value="">                    
-                    </div>
-                    <div class="form_label">Votre email
-                        <input id="email" type="email" name ="email" value="">                        
-                    </div>
-                    <div class="form_label">Votre téléphone
-                        <input id="tel" type="text" name ="tel" value="">
-                    </div>
-                </div>
+                    <div class="form_label">Votre nom</div>
+                    <input id="nom" type="text" name ="nom" value="">                    
+                    <div class="form_label">Votre email</div>
+                    <input id="email" type="email" name ="email" value="">                        
+                    <div class="form_label">Votre téléphone</div>
+                    <input id="tel" type="text" name ="tel" value=""></div>
                 <div>
-                    <div class="form_label">sujet
-                        <input id="sujet" type="text" name ="sujet" value="">
-                    </div>
-                    <div class="form_label">message
-                        <textarea rows="4" cols="" name="comment" form="usrform"></textarea>
-                    </div>
+                    <div class="form_label">sujet</div>
+                    <input id="sujet" type="text" name ="sujet" value="">
+                    <div class="form_label">message</div>
+                    <textarea rows="4" cols="" name="comment" form="usrform"></textarea>
                     <button class="button border-rose btn-rose">envoyer</button>
                 </div>
 
@@ -158,29 +164,23 @@
         </section>
         <footer id="footer" class="flex">
             <div class="child">
-                    <h2>why choose us ?</h2>
+                    <h2>about vibes</h2>
+                    <div class="line"></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tenetur.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laboriosam.</p>
                 </div>
                 <div class="child">
-                    <h2>what you get ?</h2>
-                    <div><i class="fab fa-wordpress"></i></div>
-                    <div><i class="fas fa-cog"></i></div>
-                    <div><i class="far fa-paper-plane"></i></div>
+                    <h2>news letter</h2>
+                    <div class="line"></div>
+                    <div>
+                        <p><strong>vibes</strong> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <input type="submit button border-rose" value=" subscribe">
+                    </div>
                 </div>
                 <div class="child">
-                    <div class="deroul">
-                        <h4><i class="fas fa-minus"></i>Lorem</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, corporis!</p>
-                    </div>
-                    <div class="deroul">
-                        <h4><i class="fas fa-plus "></i>Ipsum</h4>
-                        <p class="hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, corporis!</p>
-                    </div>
-                    <div class="deroul">
-                        <h4><i class="fas fa-plus "></i>test</h4>
-                        <p class="hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, corporis!</p>
-                    </div>
+                    <h2>twitter feed</h2>
+                    <div class="line"></div>
+                    <p><i class="fas fa-square-full"></i><i class="fas fa-square-full"></i><i class="fas fa-square-full"></i><i class="fas fa-square-full"></i><i class="fas fa-square-full"></i></p>
                 </div>
         </footer>
     </div>
