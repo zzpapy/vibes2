@@ -23,6 +23,22 @@
         </div>
     </div>
 </div>
+<div class="modal1 close hide">
+    <div class="arrow carousel" data-direction="prev">
+        <i class="fas fa-arrow-left fa-2x"></i>
+    </div>
+    <div class="affich1 .transform flex">
+        <iframe id="iframe" width="900" height="700"
+            src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    <div class="center_modal">
+        <div class="arrow1 carousel" data-direction="next">
+    </div>
+        <i class="fas fa-arrow-right fa-2x"></i>
+    </div>
+</div>
+
 <i class='fas change fa-palette fa-3x'></i>
     <input id="choix" class="hide "  type="color">
 
@@ -100,7 +116,11 @@
                     <img src="public/images/photo3.jpg" alt="photo foret">               
                 </div>
                 <div class="img_gal">
-                    <img src="public/images/photo1.jpg" alt="photo foret"> 
+                
+                    <iframe id="iframe" width="420" height="315"
+                        src="https://www.youtube.com/embed/NgHnXl9P39c">
+                    </iframe>      
+                
                 </div>
                 <div class="gal_nav flex">
                     <div class="tri">

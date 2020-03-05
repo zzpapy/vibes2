@@ -6,6 +6,14 @@
 *{
     box-sizing: border-box;
 }
+
+#iframe{
+    pointer-events: none;
+}
+
+
+
+
 body{
     background: var(--theme);
     font-family: 'Open Sans', sans-serif;
@@ -134,7 +142,7 @@ section:not(#gallery){
     flex-wrap: wrap;
     /* position: relative; */
 }
-.modal{
+.modal,.modal1{
     position: fixed;
     
     height: 100vh;
@@ -177,7 +185,7 @@ section:not(#gallery){
 }
 
 .transform {
-    transition: all 5s ;
+    transition: all 300ms ;
 }
 
 #modal_img.transform-active {

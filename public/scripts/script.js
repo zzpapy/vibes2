@@ -9,13 +9,30 @@ $(".deroul h4").on("click", function(){
     }
     
 })
+
+// jQuery('.html5-video-container',jQuery('[id="iframe"]')[0].contentWindow.document.body).on('click',function(){	
+// 	console.log("triggered !!")
+// });
+
+
+
 $(".img_gal").on("click",function(){ 
     vue = $(this).index()
     let modal = $(this).find("img").attr('src')
-    $(".modal").toggleClass("hide")
-    setTimeout(function(){
-         $("#modal_img").attr('src',modal).toggleClass("transform-active")
-    },1000)    
+    console.log( $(this).find("img").attr('src'))   
+    if(modal){
+        $(".modal").toggleClass("hide")
+        setTimeout(function(){
+             $("#modal_img").attr('src',modal).toggleClass("transform-active")
+        },500) 
+    }
+    else{
+        $(".modal1").toggleClass("hide")
+        let modal = $(this).find("iframe").attr('src')
+        $("#iframe").attr('src',modal).toggleClass("transform-active")
+        console.log(modal)
+       
+    }
 })
 
 
@@ -43,8 +60,15 @@ $(".carousel").on("click",function(){
 
 
 $(".close").on("click",function(){
-   
-    $(".modal").toggleClass("hide")
+    var classList = $(this)
+    if(jQuery.inArray("modal",classList.prop("classList"))==0){
+        $(".modal").toggleClass("hide")
+    }
+    else{
+       $(".modal1").toggleClass("hide")
+       $("affich1 iframe").attr("src","")
+       $("affich1 iframe").empty()
+   }
     $("#modal_img").attr('src',"").toggleClass("transform-active")
     // $(".center_modal").toggleClass("transform-active").html("")
 })
