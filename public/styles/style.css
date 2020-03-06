@@ -273,14 +273,16 @@ blockquote p{
 }
 #form>div>input{
     line-height:2em;
+    margin-bottom: 2em;
 }
 #form>div{
    flex:1;
    padding:0 1em;
-   justify-content: space-around;
+   /* justify-content: space-around; */
 }
 .form_label{
     text-align: left;
+    margin-bottom: 0.5em;
 }
 .form_label input,textarea{
     margin:0.5em 0 0.5em 0;
