@@ -116,8 +116,9 @@ window.addEventListener('scroll', function() {
         else if(isInViewport(el1) && isInViewport(el)){
             $('header').attr('class','')
         }
-        if(isInViewport(test)){
+        if(isInViewport(test)||isInViewport(el1)){
             $('a').css("border","0")
+            console.log(test)
             $('.'+$(test).attr('id')).css("border-bottom","1px solid var(--pink)")
         }
         
@@ -129,6 +130,7 @@ if(window.innerWidth<=640){
     $(".nav_menu").addClass("hide")
     $(".port").on("click",function(){
         $(".nav_menu").toggleClass("hide")
+        console.log('toto')
         // $(".nav_menu").toggleClass("flex")
         $(".nav_menu").toggleClass("transform-active")
     })

@@ -5,6 +5,7 @@
   }
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 #iframe{
@@ -150,6 +151,9 @@ section:not(#gallery){
 }
 .nav_menu .soulign:hover{
     border-bottom: 1px solid white;
+}
+.subline{
+    border-bottom: 1px solid var(--pink);
 }
 #title{
     background: url('../images/photo3.jpg');
@@ -298,24 +302,16 @@ blockquote p{
     width:20%;
 }
 #form>div>input{
-<<<<<<< HEAD
     line-height:3em;
     background-color: #aaa;
-    margin-bottom : 0.5em
-=======
-    line-height:2em;
-    margin-bottom: 2em;
->>>>>>> c41ba3b84fbb3f83a3027f4a667c05369ee3e3c2
+    margin-bottom : 0.5em;
 }
 #form>div{
    flex:1;
    padding:0 1em;
-<<<<<<< HEAD
    justify-content: space-around;
    align-self: flex-start;
-=======
-   /* justify-content: space-around; */
->>>>>>> c41ba3b84fbb3f83a3027f4a667c05369ee3e3c2
+   
 }
 .form_label{
     text-align: left;
@@ -348,6 +344,47 @@ textarea{
     color: var(--pink);
     padding-right: 0.5em;
 }
+
+
+.move-me {
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    position: relative;
+    margin: 0 0 10px 0;
+  }
+  .move-me-1 {
+    animation: move-in-steps 8s steps(4) infinite;
+  }
+  .move-me-2 {
+    animation: move-in-steps 8s steps(4, start) infinite;
+  }
+  .move-me-3 {
+    animation: move-in-steps 2s ease;
+  }
+  .turn:hover .move-me-3{
+    animation: move-in-steps 2s ease;
+  }
+  .move-me-4 {
+    animation: move-in-steps 8s infinite;
+  }
+  body {
+    padding: 20px;
+  }
+  
+  @keyframes move-in-steps {
+    0% {
+      transform: rotate(0);
+      left: 0;
+    }
+    100% {
+      transform: rotate(360deg);
+      left:100%;
+    }
+  }
+
+
+
 @media all and (max-width: 640px) {
     #title p{
         font-size: 1em;

@@ -210,8 +210,7 @@
                 </div>
                 <div class="child">
                     <h2>twitter feed</h2>
-                    <div class="line"></div>
-                    <p><i class="fas fa-square-full"></i><i class="fas fa-square-full"></i><i class="fas fa-square-full"></i><i class="fas fa-square-full"></i><i class="fas fa-square-full"></i></p>
+                    <p class="turn"><i class="fas fa-square-full"></i><i class="fas fa-square-full "></i><i class="fas fa-square-full "></i><i class="fas fa-square-full"></i><i class="fas fa-square-full move-me-3"></i></p>
                 </div>
         </section>
         <footer class="end">
