@@ -176,14 +176,14 @@
             <h1>GET IN TOUCH</h1>
             <div class="line"></div>
             <form action="apps/envoi.php" id="form" method="POST"class="flex">
-                <div class="">
+                <div class="flex">
                     <div class="form_label">Votre nom</div>
                     <input id="nom" type="text" name ="nom" value="">                    
                     <div class="form_label">Votre email</div>
                     <input id="email" type="email" name ="email" value="">                        
                     <div class="form_label">Votre téléphone</div>
                     <input id="tel" type="text" name ="tel" value=""></div>
-                <div>
+                <div class="flex">
                     <div class="form_label">sujet</div>
                     <input id="sujet" type="text" name ="sujet" value="">
                     <div class="form_label">message</div>
