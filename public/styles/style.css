@@ -432,6 +432,9 @@ textarea{
     section:not(#gallery){
         padding: 1em 0em;
     }
+    .center_test>div{
+        padding: 1em 0;
+    }
     .center_test>div:nth-child(even){
         flex-direction: row;
         text-align: left;
@@ -439,11 +442,12 @@ textarea{
     }
     .center_test>div img {
         display: block;
-        margin: auto;
+        margin: 1em auto;
+        
     }
     .center_test>div:nth-child(even) img {
         display: block;
-        margin: auto;
+        margin: 1em auto;
     }
     #form div{
         width: 100%;
@@ -491,7 +495,7 @@ textarea{
       .bars_menu{
         display: block;
         position: absolute;
-        top:0.2em;
+        top:2em;
         left:0.5em;
         font-size: 5em;
         color: var(--pink);
@@ -507,8 +511,8 @@ textarea{
         background-color: black;
         line-height: 4em;
     }
-    section{
-        padding: 0;
+    section:not(#gallery){
+        padding: 1em;
     }
     .logo{
         display: none;

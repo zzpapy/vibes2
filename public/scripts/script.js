@@ -148,7 +148,6 @@ if(window.innerWidth<=770 && window.innerWidth>360 ){
     var styles = {'width':width}
     $(".nav_menu").css(styles)
     $('#tab_logo').attr('src','public/images/logo.png')
-    $('section').css("padding","0")
 }
 $(".bars_menu").on("click",function(){
     $(".nav_menu").toggleClass("flex")
