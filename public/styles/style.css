@@ -10,9 +10,22 @@
 #iframe{
     pointer-events: none;
 }
+.color{
+    color:var(--pink);
+}
+.color_span{
+    color: #aaa;
+}
+.color_head{
+    background:rgb(0,0,0,0.5);
+    
+}
 
-
-
+header{
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+}
 
 body{
     background: var(--theme);
@@ -91,10 +104,16 @@ img{
     margin: 4em 0 4em 0;
 }
 .main>*:nth-child(odd){
+    color: white;
+}
+.main>*:not(.test):nth-child(even){
+    color: black;
     background: white;
 }
-.main>*:nth-child(even){
+.end{
+    background-color: black;
     color: white;
+    text-align: center;
 }
 section:not(#gallery){
     padding: 1em 8em;
@@ -111,13 +130,13 @@ section:not(#gallery){
 }
 .child{
     flex:1;
+    padding: 0 2em;
 }
 #nav{
     align-items: center;
     justify-content: space-around;
     padding: 2em 0;
-    position: sticky;
-    top: 0;
+   
 }
 .nav_menu{
     /* opacity : 0; */
@@ -129,17 +148,24 @@ section:not(#gallery){
     text-transform: uppercase;
 
 }
-.nav_menu a:hover{
+.nav_menu .soulign:hover{
     border-bottom: 1px solid white;
 }
 #title{
-    background: url('../images/foret.jfif');
+    background: url('../images/photo3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 20em;
+    text-transform: uppercase;
+    padding: 1em;
+    text-shadow: 2px 2px 2px var(--pink);
+}
+#title p{
+    font-size: 1.5em;
 }
 .gal_img{
     flex-wrap: wrap;
+    justify-content: center;
     /* position: relative; */
 }
 .modal,.modal1{
@@ -206,11 +232,11 @@ section:not(#gallery){
 .gal_nav{
     width: 100%;
     justify-content:space-between ;
-    padding:2em 0.3em;
+    padding:2em 5em;
     background: white;
-}.tri span{
-    color:#aaa;
+    text-transform: uppercase;
 }
+
 #testimonials h1,#contact h1{
     text-align: center;
 }
@@ -227,7 +253,7 @@ section:not(#gallery){
 .center_test>div{
     display: flex;
     align-items: flex-start;
-    padding: 2em 0;
+    padding: 3em 0;
     border-bottom: 1px solid #aaa; 
 }
 .center_test>div:last-child{
@@ -272,18 +298,22 @@ blockquote p{
     width:20%;
 }
 #form>div>input{
-    line-height:2em;
+    line-height:3em;
+    background-color: #aaa;
+    margin-bottom : 0.5em
 }
 #form>div{
    flex:1;
    padding:0 1em;
    justify-content: space-around;
+   align-self: flex-start;
 }
 .form_label{
     text-align: left;
 }
 .form_label input,textarea{
     margin:0.5em 0 0.5em 0;
+    background-color: #aaa;
 }
 textarea{
     height: 8em;
@@ -301,7 +331,17 @@ textarea{
 .child .line{
     margin: 0;
 }
+.child div p{
+    padding-left: 2.5em;
+}
+.fab,.fas:not(.change),.far{
+    color: var(--pink);
+    padding-right: 0.5em;
+}
 @media all and (max-width: 640px) {
+    #title p{
+        font-size: 1em;
+    }
     .flex{
         flex-direction: column;
     }
@@ -310,13 +350,14 @@ textarea{
     }
     #nav{
         position: fixed;
-        right:1em;
-        top:1em;
+       width: 100%;
+        top:2em;
     }
     .nav_menu {
         flex-direction: column;
         opacity: 0;
-        transition: opacity 4s;
+        transition: opacity 1s;
+        width: 100%;
     }
     .transform-active{
         opacity: 1;
@@ -328,12 +369,14 @@ textarea{
         padding: 0.5em 1em;
         background-color: black;
         border: 1px solid white;
+        width: 100%;
+        text-align: center;
     }
     .bars_menu{
         display: block;
         position: fixed;
-        top:1em;
-        right:1em;
+        top:0.2em;
+        left:0.5em;
         color: var(--pink);
     }
     .logo{
@@ -341,5 +384,24 @@ textarea{
     }
     section:not(#gallery){
         padding: 1em 2em;
+    }
+    .center_test>div:nth-child(even){
+        flex-direction: row;
+        text-align: left;
+        flex-direction: column;
+    }
+    .center_test>div img {
+        display: block;
+        margin: auto;
+    }
+    .center_test>div:nth-child(even) img {
+        display: block;
+        margin: auto;
+    }
+    #form div{
+        width: 100%;
+    }
+    #form div .button{
+        width: 100%;
     }
   }

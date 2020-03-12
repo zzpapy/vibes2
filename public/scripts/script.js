@@ -81,13 +81,13 @@ $(".change").on("click",function(){
 })
 var c = document.getElementById("choix")
     
-    t = document.getElementById("time"),
-    res2 = document.getElementById("result2");
+    t = document.getElementById("time")
+    res2 = document.getElementById("result2")
 
 c.addEventListener("input", function() {
     color = c.value
-    document.documentElement.style.setProperty('--pink', color);
-    document.documentElement.style.setProperty('--theme', color);
+    document.documentElement.style.setProperty('--pink', color)
+    document.documentElement.style.setProperty('--theme', color)
     $("#choix").click().addClass("hide");
     console.log(c.value)
 }, false);
@@ -102,17 +102,23 @@ var isInViewport = function (elem) {
         bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 };
-// console.log(isInViewport(test))
-tab = ['#title','#info','#gallery','#testimonials','#contact','#footer']
+tab = ['#header','#info','#gallery','#testimonials','#buy','#contact','#footer']
 window.addEventListener('scroll', function() {
-    // console.log(test);
+    // gal = el =document.getElementById("testimonials")
+    // console.log(gal)
     tab.forEach(element => {
         var test = document.querySelector(element)
+        el =document.getElementById("title")
+        el1 =document.getElementById("header")
+        if(isInViewport(el) && !isInViewport(el1)){
+            $('header').addClass('color_head')
+        }
+        else if(isInViewport(el1) && isInViewport(el)){
+            $('header').attr('class','')
+        }
         if(isInViewport(test)){
-            // console.log($("a[href='"+test+"'"))
-            $("a[href='"+test+"'").css("border-bottom","1px solid white")
-            test.style.border = "1px solid black"
-            // console.log(isInViewport(test))
+            $('a').css("border","0")
+            $('.'+$(test).attr('id')).css("border-bottom","1px solid var(--pink)")
         }
         
     });
@@ -121,12 +127,29 @@ window.addEventListener('scroll', function() {
 console.log(window.innerWidth)
 if(window.innerWidth<=640){
     $(".nav_menu").addClass("hide")
+    $(".port").on("click",function(){
+        $(".nav_menu").toggleClass("hide")
+        // $(".nav_menu").toggleClass("flex")
+        $(".nav_menu").toggleClass("transform-active")
+    })
 
 }
 $(".bars_menu").on("click",function(){
+    // $(".nav_menu").toggleClass("flex")
     $(".nav_menu").toggleClass("hide").toggleClass("transform-active")
 })
-$(".port").on("click",function(){
-    $(".nav_menu").toggleClass("hide")
-    $(".nav_menu").toggleClass("flex")
+$(".tri span").on('click',function(){
+    $data = $(this).data('tri')
+    // $(this).addClass('color');
+    $(".color").attr('class','color_span')
+    $(this).attr('class','color');
+    $(".img_gal").each(function(){        
+        if(!$(this).hasClass($data)){
+            $(this).addClass('hide');
+        }
+        else{
+            $(this).removeClass('hide');
+           
+        }
+    })
 })

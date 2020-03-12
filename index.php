@@ -43,79 +43,90 @@
     <input id="choix" class="hide "  type="color">
 
 <div id="wrapper">
-    <header id="header">
+    <div id="header"></div>
+    <header >
         <div id="nav" class="flex">
             <div class="logo">
                 <img src="public/images/logo.png" alt="image logo">
             </div>
             <div class="nav_menu flex">
-                <a class="port" href="#title">home</a>
-                <a class="port" href="#info">about</a>
-                <a class="port" href="#gallery">portfolio</a>
-                <a class="port" href="#testimonials">testimonials</a>
-                <a class="port" href="#contact">contact</a>
-                <a class="port" href="#footer">pages</a>
+                <a class="port soulign header" href="#header">home</a>
+                <a class="port soulign info" href="#info">about</a>
+                <a class="port soulign gallery" href="#gallery">portfolio</a>
+                <a class="port soulign testimonials" href="#testimonials">testimonials</a>
+                <a class="port soulign buy" href="#buy">buy</a>
+                <a class="port soulign contact" href="#contact">contact</a>
+                <a class="port soulign footer" href="#footer">pages</a>
             </div>
         </div>
         <i class="fas bars_menu fa-bars fa-2x"></i>
+    </header>
+    <div class="main">
         <div id="title">
             <h1>html template for creative fol design agencies</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe beatae tempore cumque perspiciatis earum veritatis eum, vitae, laborum itaque voluptatem debitis tenetur, voluptatum in expedita.</p>
             <input type="submit" class="button" value="read more">
         </div>
-    </header>
-    <div class="main">
         <section id="info" class="flex">
             <div class="child">
                 <h2>why choose us ?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tenetur.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laboriosam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aliquam veritatis necessitatibus aut ex officiis dicta assumenda! Nesciunt voluptas eum alias, voluptates quisquam debitis? Dignissimos, ipsa. Sunt possimus ipsa laudantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, minima laborum distinctio, quo repudiandae alias numquam optio accusamus temporibus excepturi, nobis provident. Ab ex iusto qui ullam accusamus aut expedita.</p>
             </div>
             <div class="child">
                 <h2>what you get ?</h2>
-                <div><i class="fab fa-wordpress"></i></div>
-                <div><i class="fas fa-cog"></i></div>
-                <div><i class="far fa-paper-plane"></i></div>
+                <div>
+                    <h2><i class="fab fa-wordpress"></i>color is full & compact</h2>
+                    <p>lorem</p>
+                </div>
+                <div>
+                    <h2><i class="fas fa-cog"></i>very easy to use</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, reiciendis.</p>
+                </div>
+                <div>
+                    <h2><i class="far fa-paper-plane"></i>coded with</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, reiciendis.</p>
+                </div>
             </div>
             <div class="child">
                 <div class="deroul">
-                    <h4><i class="fas fa-minus"></i>Lorem</h4>
+                    <h2><i class="fas fa-minus"></i>Lorem</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, corporis!</p>
                 </div>
                 <div class="deroul">
-                    <h4><i class="fas fa-plus "></i>Ipsum</h4>
+                    <h2><i class="fas fa-plus "></i>Ipsum</h2>
                     <p class="hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, corporis!</p>
                 </div>
                 <div class="deroul">
-                    <h4><i class="fas fa-plus "></i>test</h4>
+                    <h2><i class="fas fa-plus "></i>test</h2>
                     <p class="hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, corporis!</p>
                 </div>
             </div>
         </section>
         <section id="gallery">
-            <div class="gal_img flex">                
-                <div class="img_gal">
+            <div class="gal_img flex ">                
+                <div class="img_gal all photo">
                     <img src="public/images/photo1.jpg" alt="photo foret">               
                 </div>
-                <div class="img_gal">
+                <div class="img_gal all photo">
                     <img src="public/images/photo2.jpg" alt="photo foret">               
                 </div>
-                <div class="img_gal">
+                <div class="img_gal all photo">
                     <img src="public/images/photo3.jpg" alt="photo foret">               
                 </div>
-                <div class="img_gal">
+                <div class="img_gal all photo">
                     <img src="public/images/photo4.png" alt="photo foret">               
                 </div>
-                <div class="img_gal">
+                <div class="img_gal all audio">
                     <img src="public/images/photo5.jpg" alt="photo foret">               
                 </div>
-                <div class="img_gal">
+                <div class="img_gal all photo">
                     <img src="public/images/photo6.jpg" alt="photo foret">               
                 </div>
-                <div class="img_gal">
+                <div class="img_gal all photo">
                     <img src="public/images/photo3.jpg" alt="photo foret">               
                 </div>
-                <div class="img_gal">
+                <div class="img_gal all video">
                 
                     <iframe id="iframe" width="420" height="315"
                         src="https://www.youtube.com/embed/NgHnXl9P39c">
@@ -124,10 +135,10 @@
                 </div>
                 <div class="gal_nav flex">
                     <div class="tri">
-                        <span>all</span>
-                        <span>image</span>
-                        <span>video</span>
-                        <span>audio</span>
+                        <span class="color" data-tri ="all">all</span>
+                        <span  class="color_span" data-tri ="photo">image</span>
+                        <span  class="color_span" data-tri ="video">video</span>
+                        <span  class="color_span" data-tri ="audio">audio</span>
                     </div>
                     <div class="load">
                         <a href="" class="button btn-rose border-rose">load more</a>
@@ -182,7 +193,7 @@
 
             </form>
         </section>
-        <footer id="footer" class="flex">
+        <section id="footer" class="flex">
             <div class="child">
                     <h2>about vibes</h2>
                     <div class="line"></div>
@@ -194,7 +205,7 @@
                     <div class="line"></div>
                     <div>
                         <p><strong>vibes</strong> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <input type="submit button border-rose" value=" subscribe">
+                        <input type="submit" class=" button text-rose border-rose"value=" subscribe">
                     </div>
                 </div>
                 <div class="child">
@@ -202,6 +213,9 @@
                     <div class="line"></div>
                     <p><i class="fas fa-square-full"></i><i class="fas fa-square-full"></i><i class="fas fa-square-full"></i><i class="fas fa-square-full"></i><i class="fas fa-square-full"></i></p>
                 </div>
+        </section>
+        <footer class="end">
+            <span>© Gregory Pace</span>
         </footer>
     </div>
 </div>
