@@ -1,9 +1,14 @@
 let vue
-$(".deroul h4").on("click", function(){
-         console.log('toto')  
-    if($(this).find("i").hasClass("fa-plus")){ 
-        $(".deroul h4").find("i.fa-minus").removeClass("fa-minus").addClass("fa-plus")
-        $(".deroul h4").siblings("p").slideUp(400)
+var width = window.innerWidth
+$(".deroul h2").on("click", function(){
+    if($(this).find("i").hasClass("fa-minus")){
+        $(this).find("i").addClass("fa-plus").removeClass("fa-minus")
+        $(".deroul h2").siblings("p").slideUp(400)
+        console.log($(this).find("i").hasClass("fa-minus"))  
+    }
+    else if($(this).find("i").hasClass("fa-plus")){ 
+        $(".deroul h2").find("i.fa-minus").removeClass("fa-minus").addClass("fa-plus")
+        $(".deroul h2").siblings("p").slideUp(400)
         $(this).find("i").addClass("fa-minus").removeClass("fa-plus")
         $(this).siblings("p").slideDown(400)
     }
@@ -104,21 +109,20 @@ var isInViewport = function (elem) {
 };
 tab = ['#header','#info','#gallery','#testimonials','#buy','#contact','#footer']
 window.addEventListener('scroll', function() {
-    // gal = el =document.getElementById("testimonials")
-    // console.log(gal)
     tab.forEach(element => {
         var test = document.querySelector(element)
         el =document.getElementById("title")
         el1 =document.getElementById("header")
         if(isInViewport(el) && !isInViewport(el1)){
-            $('header').addClass('color_head')
+            if(width>770){
+                $('header').addClass('color_head')
+            }
         }
         else if(isInViewport(el1) && isInViewport(el)){
             $('header').attr('class','')
         }
         if(isInViewport(test)||isInViewport(el1)){
             $('a').css("border","0")
-            console.log(test)
             $('.'+$(test).attr('id')).css("border-bottom","1px solid var(--pink)")
         }
         
@@ -126,18 +130,28 @@ window.addEventListener('scroll', function() {
     
 });
 console.log(window.innerWidth)
-if(window.innerWidth<=640){
-    $(".nav_menu").addClass("hide")
+if(window.innerWidth<=770 ){
+    $(".nav_menu").toggleClass("hide")
+    $(".nav_menu").toggleClass("flex")
     $(".port").on("click",function(){
         $(".nav_menu").toggleClass("hide")
         console.log('toto')
-        // $(".nav_menu").toggleClass("flex")
+        $(".nav_menu").toggleClass("flex")
         $(".nav_menu").toggleClass("transform-active")
     })
 
 }
+if(window.innerWidth<=770 && window.innerWidth>360 ){
+    
+    console.log(typeof(width))
+    width=width
+    var styles = {'width':width}
+    $(".nav_menu").css(styles)
+    $('#tab_logo').attr('src','public/images/logo.png')
+    $('section').css("padding","0")
+}
 $(".bars_menu").on("click",function(){
-    // $(".nav_menu").toggleClass("flex")
+    $(".nav_menu").toggleClass("flex")
     $(".nav_menu").toggleClass("hide").toggleClass("transform-active")
 })
 $(".tri span").on('click',function(){

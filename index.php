@@ -66,6 +66,7 @@
             <h1>html template for creative fol design agencies</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe beatae tempore cumque perspiciatis earum veritatis eum, vitae, laborum itaque voluptatem debitis tenetur, voluptatum in expedita.</p>
             <input type="submit" class="button" value="read more">
+            <img id="tab_logo" src="" alt="">
         </div>
         <section id="info" class="flex">
             <div class="child">

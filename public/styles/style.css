@@ -363,7 +363,7 @@ textarea{
     animation: move-in-steps 2s ease;
   }
   .turn:hover .move-me-3{
-    animation: move-in-steps 2s ease;
+    animation: move-in-steps 2s infinite;
   }
   .move-me-4 {
     animation: move-in-steps 8s infinite;
@@ -385,9 +385,9 @@ textarea{
 
 
 
-@media all and (max-width: 640px) {
+@media all and (max-width: 360px) {
     #title p{
-        font-size: 1em;
+        display: none;
     }
     .flex{
         flex-direction: column;
@@ -430,7 +430,7 @@ textarea{
         display:none;
     }
     section:not(#gallery){
-        padding: 1em 2em;
+        padding: 1em 0em;
     }
     .center_test>div:nth-child(even){
         flex-direction: row;
@@ -450,5 +450,77 @@ textarea{
     }
     #form div .button{
         width: 100%;
+    }
+    .gal_nav{
+        flex-direction: row;
+        padding:2em 1em;
+    }
+    .load a{
+        padding: 0;
+    }
+  }
+  @media all and (min-width:361px) and (max-width: 770px) {
+      #wrapper{
+          width: 100%;
+      }
+      #title p{
+          display: none;
+      }
+      #nav{
+          justify-content: flex-end;
+      }
+      #form{
+            flex-direction: column;
+            padding: 3em 1em;
+            width: 80%;
+        }
+      #form div .button{
+          width: 100%;
+      }
+      .flex{
+          width: 100%;
+      }
+      .transform-active{
+          position: absolute;
+          z-index: 1;
+          /* left: -500px; */
+          top:2.5em;
+          opacity: 1;
+          margin-left: 1.3em;
+      }
+      .bars_menu{
+        display: block;
+        position: absolute;
+        top:0.2em;
+        left:0.5em;
+        font-size: 5em;
+        color: var(--pink);
+    }
+    .nav_menu {
+        flex-direction: column;
+        /* opacity: 0; */
+        transition: opacity 1s;
+        width: 100%;
+        text-align: center;
+    }
+    .port{
+        background-color: black;
+        line-height: 4em;
+    }
+    section{
+        padding: 0;
+    }
+    .logo{
+        display: none;
+    }
+
+    #tab_logo{
+        width: 5em;
+        height: 5em;
+        display: block;
+        margin: 1em auto;        
+    }
+    .img_gal{
+        width: 50%;
     }
   }
